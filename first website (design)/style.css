@@ -1,0 +1,299 @@
+/* Genel Sayfa Stili */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dedbd2;
+    color: #5a4636;
+}
+
+/* Başlık Alanı */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    border-bottom: 1px solid #a89f91;
+}
+
+.head {
+    font-size: 25px;
+    font-weight: bold;
+    color: #5a4636;
+}
+
+.buttons button {
+    background-color: transparent;
+    color: #5a4636;
+    border: 1px solid #a89f91;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover,.btn_log_reg:hover {
+    background-color: #a89f91;
+    color: white;
+}
+
+/* Menü */
+.menu {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #a89f91;
+}
+
+.menubtn button {
+    background-color: transparent;
+    color: #5a4636;
+    border: 1px solid #a89f91;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menubtn button:hover {
+    background-color: #a89f91;
+    color: white;
+}
+
+/* Sütun Yapısı---yemek sayfası ve ana sayfa için */
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Eşit genişlikte sütunlar */
+    gap: 20px;
+    padding: 20px;
+    border-top: 1px solid #a89f91;
+}
+
+/* Login & Register Sayfası */
+.login_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.register, .log_in{
+    width: 40%;
+    padding: 20px;
+    border: 1px solid #a89f91;
+    border-radius: 10px;
+    background-color: #f3f0e7;
+    text-align: center;
+}
+.btn_log_reg{
+    width: 40%;
+    padding: 3px;
+    border: 1px solid #a89f91;
+    border-radius: 10px;
+    background-color: #f3f0e7;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: transparent;
+}
+
+
+/* Haber İçeriği */
+.news-item {
+    display: flex;
+    flex-direction: column; /* İçeriği yatay olarak hizala */
+    align-items: center;
+    text-align: left;
+    gap: 15px;
+}
+
+.news-item img {
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+.caption {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.below-caption {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/*Haber Sayfaları*/
+.NEWS, .recipe{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.NEWS-item {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3, opacity 0.3s;
+}
+.NEWS-item:hover{
+    background-color: #f3f0e7;
+    opacity: 0.7;
+}
+.newsimg{
+    border-radius: 15px;
+    
+}
+
+/* Sosyal Medya Butonları */
+.snsbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.snsbtn button {
+    background: transparent;
+    border: 1px solid #a89f91;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.snsbtn button:hover {
+    background-color: #a89f91;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #a89f91;
+}
+/*Link yapısı*/
+a:link {
+    color: rgb(110, 60, 10);
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited {
+    color: rgb(110, 60, 10);
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(36, 35, 34);
+    background-color: transparent;
+    text-decoration: underline;
+}
+/*horizon CSS  partı*/
+#horizonCSS{
+    background-color: #e3f542;
+    color: #d62a0f;
+    text-align:center ;
+    margin:0px ;
+    font-size: 70px ;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*Yemek sayfasının detayları*/
+
+.ingredients {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.steps{
+    
+    border-radius: 8px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.lazanya{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+/*Contact Sayfasının Detayları*/
+.harita{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Kitap ve Film Önerileri */
+.kitap, .film {
+    width: 80%; 
+    max-width: 200px;
+    border-radius: 20px;
+    border: 4px solid #8b622f; 
+    display: block;
+    margin: 10px auto;
+    object-fit: cover;
+}
+.header3 , .header4 {
+    text-align: center;
+}
+
+/*Ana sayfa haber düzenlemeleri*/
+.homepage_img{
+    display: block;
+    margin-left: 30px;
+    margin-bottom: 150px;
+    margin-right: 30px;
+    width: 80%;
+    transition: background-color 0.3, opacity 0.3s;
+    border-radius: 30px;
+    border: 8px solid #8b622f;
+}
+.homepage_img:hover{
+    background-color: #f3f0e7;
+    opacity: 0.7;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+  }
+  
+  .column {
+    flex: 1; 
+    padding: 10px;
+  }
+p{
+    font-size: 16.5px;
+}
+
+
+/*manşet haber sayfası detayları*/
+.gezegen{
+    width: 80%;
+    height: auto;
+    margin-left: 145px;
+    border-radius: 15px;
+
+}
+.paragraph_header{
+    text-align: center;
+}
+.paragraph{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    text-align: center;
+}

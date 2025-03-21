@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>HSB NEWS</title>
+</head>
+<body>
+    <!-- HEADER SECTION -->
+    <div class="header">
+        <p class="head"><a href="index.html" style="text-decoration: none;">HSB NEWS</a></p>
+        <div class="buttons">
+            <a href="login.html"><button class="login">REGISTER/LOG IN</button></a>
+            <button class="message" onclick="alert('Hi everyone from Javascript!')">MESSAGE</button>
+        </div>
+    </div>
+    
+    <!-- MENU SECTION -->
+    <div class="menu">
+        <div class="menubtn">
+            <button class="world"><a href="world.html" style="text-decoration: none;">World</a></button>
+            <button class="economy"><a href="economy.html" style="text-decoration: none;">Economy</a></button>
+            <button class="sport"><a href="sport.html" style="text-decoration: none;">Sport</a></button>
+        </div>
+    </div>
+    
+    <!-- LOGIN / REGISTER SECTION -->
+    <div class="login_page">
+       <div class="register">
+            <input type="text" name="name" id="name" placeholder="Name"><br><br>
+            <input type="text" name="surname" id="surname" placeholder="Surname"><br><br>
+            <input type="email" name="email" id="email" placeholder="E-mail"><br><br>
+            <input type="tel" name="phone" id="phone" placeholder="Phone number"><br><br>
+            <input type="password" name="password" id="password" placeholder="Password"><br><br>
+            <input type="password" name="password_confirm" id="password_confirm" placeholder="Password again"><br><br>
+            
+            <input type="radio" name="gender" id="male"> <label for="male">Male</label>
+            <input type="radio" name="gender" id="female"> <label for="female">Female</label><br><br>
+            
+            <input type="checkbox" name="email_notifications" id="email_notifications"> <label for="email_notifications">Receive notifications by email</label><br>
+            <input type="checkbox" name="sms_notifications" id="sms_notifications"> <label for="sms_notifications">Receive notifications by phone message</label><br><br>
+            
+            <select name="country" id="country">
+                <option value="">Select country</option>
+                <option value="turkiye">Türkiye</option>
+                <option value="usa">USA</option>
+                <option value="germany">Germany</option>
+                <option value="france">France</option>
+                <option value="canada">Canada</option>
+                <option value="australia">Australia</option>
+                <option value="belgium">Belgium</option>
+                <option value="netherlands">Netherlands</option>
+            </select><br><br>
+            
+            <button class="btn_log_reg">REGISTER</button>
+       </div>
+       
+       <div class="log_in">
+            <input type="email" name="login_email" id="login_email" placeholder="E-mail"><br><br>
+            <input type="password" name="login_password" id="login_password" placeholder="Password"><br><br>
+            <input type="checkbox" name="remember_me" id="remember_me"> <label for="remember_me">Remember me</label><br><br>
+            <button class="btn_log_reg">LOG IN</button><br><br>
+       </div>
+    </div>
+    
+    <!-- FOOTER SECTION -->
+    <div class="footer">
+        <a href="contact.html" style="text-decoration: none;">contact</a>
+        <div class="snsbtn">
+            <button class="insta"><img src="images\insta.png" width="15" height="15"></button>
+            <button class="x"><img src="images\X_logo.jpg" width="15" height="15"></button>
+            <button class="facebook"><img src="images\facebook.png" width="15" height="15"></button>
+            <button class="youtube"><img src="images\Youtube_logo.png" width="15" height="15"></button>
+        </div>
+    </div>
+</body>
+</html>
